@@ -99,7 +99,7 @@ td {
 def get_conn():
     return psycopg2.connect(
         host=st.secrets["postgres"]["host"],
-        dbname=st.secrets["postgres"]["dbname"],  # ⬅️ diubah
+        dbname=st.secrets["postgres"]["database"],  # ⬅️ ambil dari 'database'
         user=st.secrets["postgres"]["user"],
         password=st.secrets["postgres"]["password"],
         port=st.secrets["postgres"]["port"],
