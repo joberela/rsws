@@ -118,7 +118,7 @@ if "login" not in st.session_state:
 # LOGIN
 # ========================
 def login_page():
-    st.title("🔐 Login Sistem Reagen")
+    st.title("🔐 Login Sistem Pengunaan RS/WS PT. Erela")
 
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
